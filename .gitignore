@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env.local
+public/uploads/
+.DS_Store
+.claude/
+.playwright-mcp/
+mi-saas/
+saas-factory-setup/
+test-*.mp4
+*.tsbuildinfo
+logs/

@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=zmwuwdnpwtjqiqzlvvqo"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_d1f438ce5052ca771f991df12fe270a6734d1bc4"
+      }
+    }
+  }
+}
