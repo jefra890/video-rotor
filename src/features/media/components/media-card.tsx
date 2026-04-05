@@ -128,12 +128,22 @@ export function MediaCard({ media, onDelete, onClick }: MediaCardProps) {
         </div>
       </div>
 
-      <div className="border-t border-surface-100 px-3 py-2">
+      <div className="border-t border-surface-100 px-3 py-2 flex gap-2">
+        {media.status === 'ready' && media.vertical_url && (
+          <a
+            href={media.vertical_url}
+            download
+            onClick={(e) => e.stopPropagation()}
+            className="flex-1 rounded-lg border border-surface-200 px-3 py-1.5 text-center text-sm font-medium text-surface-700 hover:bg-surface-50 transition-colors"
+          >
+            Descargar
+          </a>
+        )}
         <Button
           variant={confirmDelete ? 'danger' : 'ghost'}
           size="sm"
           onClick={handleDeleteClick}
-          className="w-full"
+          className="flex-1"
           aria-label={confirmDelete ? 'Confirmar eliminacion' : 'Eliminar medio'}
         >
           {confirmDelete ? 'Confirmar eliminacion' : 'Eliminar'}
