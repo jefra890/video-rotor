@@ -192,7 +192,7 @@ export function PlayerPreview() {
                   key={currentMedia.id}
                   src={currentMedia.vertical_url ?? currentMedia.original_url}
                   className="h-full w-full object-cover"
-                  autoPlay={autoPlay}
+                  autoPlay
                   muted
                   playsInline
                   loop={!autoPlay}
